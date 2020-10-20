@@ -26,7 +26,7 @@
 
             <div class="banner">
                 <h1>Web Developer & <br>
-                     Front End Designer</h1>
+                    Front End Designer</h1>
                 <p>Juliano Cesar Volski</p>
                 <button>Saiba mais</button>
             </div>
@@ -194,7 +194,7 @@
                 </div>
 
                 <div class="contato-right">
-                    <form action="#">
+                    <form>
                         <div class="input-group">
                             <input id="nome" type="text" class="field">
                             <label for="nome" class="field-label">Nome</label>
@@ -204,13 +204,45 @@
                             <label for="email" class="field-label">Email</label>
                         </div>
                         <div class="input-group">
+                            <input id="assunto" type="text" class="field">
+                            <label for="assunto" class="field-label">Assunto</label>
+                        </div>
+                        <div class="input-group">
                             <textarea id="mensagem" class="field"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
-                        <button type="submit" class="btn-submit">Enviar</button>
+                        <button class="btn-submit" onclick="validaForm()">Enviar</button>
                     </form>
                 </div>
             </div>
+        </section>
+
+        <section class="sessao-orcamento">
+            <div class="orcamento-wrapper">
+                <div class="sessao-header">
+                    <h1>Faça seu Orçamento</h1>
+                </div>
+                <form>
+                    <label for="qtde">Qtde de Páginas</label>
+                    <input type="text" id="qtde" name="qtde">
+                    <label for="js">Preciso de JavaScript</label>
+                    <input type="checkbox" id="js" name="js">
+                    <label for="js">Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" id="layout" name="layout-sim">
+                            <label for="layout-sim">Preciso de Layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="layout" name="layout-nao">
+                            <label for="layout-nao">Já possuo Layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo de Entrega</label>
+                    <input type="range" id="prazo" name="prazo">
+                    <button type="submit">Enviar Orçamento</button>
+                </form>
+            </div>  
         </section>
     </div>
 
